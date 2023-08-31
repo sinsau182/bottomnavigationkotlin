@@ -2,6 +2,7 @@ package com.sinsau.bottomnavigationkotlin
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
@@ -16,5 +17,7 @@ class MainActivity : AppCompatActivity() {
         val fragmentContainer = findViewById<View>(R.id.fragmentContainer)
 
         bottomNav.setupWithNavController(fragmentContainer.findNavController())
+
+        Log.d("check", "this check is working fine!")
     }
 }

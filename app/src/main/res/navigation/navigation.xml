@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/kotlinFragment">
+
+    <fragment
+        android:id="@+id/kotlinFragment"
+        android:name="com.sinsau.bottomnavigationkotlin.ui.KotlinFragment"
+        android:label="fragment_kotlin"
+        tools:layout="@layout/fragment_kotlin" />
+    <fragment
+        android:id="@+id/javaFragment"
+        android:name="com.sinsau.bottomnavigationkotlin.ui.JavaFragment"
+        android:label="fragment_java"
+        tools:layout="@layout/fragment_java" />
+    <fragment
+        android:id="@+id/flutterFragment"
+        android:name="com.sinsau.bottomnavigationkotlin.ui.FlutterFragment"
+        android:label="fragment_flutter"
+        tools:layout="@layout/fragment_flutter" />
+</navigation>
